@@ -17,3 +17,20 @@ Step 1:
   - Variable 'data_subject' : Merge the subject_test and subject_train by row with rbind().
   - Variable 'data_ysub' : Merge the 'data_y' and 'data_subject' by column with cbind().
   - Variable 'data_all' : Merge the 'data_ysub' and 'data_x' by column with cbind() which results the merging of test and training data sets.
+
+Step 2:
+  - Variable 'featureName' : Select the feature with word 'mean' or 'std' in data set 'feature' with grep().
+  - Variable 'data_meanstd':  Select the column subject, activity and columns which determine in step above from data set 'data_all'.
+
+Step 3:
+  - Change the characteristic of the activity field in data set 'data_meanstd' to factor with as.factor().
+  - Assign the data set 'activity' to the levels of field 'activity' in data set 'data_meanstd'.
+
+Step 4:
+  - Rename the variable columns in data set 'data_meanstd' with more descriptive label by replacing the characters with gsub().   Characters to be replaced as below:
+      * prefix t is replaced by time
+      * prefix f is replaced by frequency
+      * Acc is replaced by Accelerometer
+      * Gyro is replaced by Gyroscope
+      * Mag is replaced by Magnitude
+      * BodyBody is replaced by Body
