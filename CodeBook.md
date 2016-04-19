@@ -34,3 +34,8 @@ Step 4:
       * Gyro is replaced by Gyroscope
       * Mag is replaced by Magnitude
       * BodyBody is replaced by Body
+  
+Step 5:
+  - Variable 'aggdata': A new data set which average each of the columns for activity and subject with aggregate().
+  - Sort the variable by subject followed by activity.
+  - Write the data set to a location in working directory.
