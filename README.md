@@ -10,7 +10,7 @@ The datasets that are used in this project as below:
   - test/X_test   : Each row contains the measurement which is result of the subject performs the activity during testing
   - test/y_test   : Each row is the activity which subject performed during testing
   
-In the step 1
+Step 1:
   - Merge the X_train and X_test together to have the both measurement of activity in training and testing.
   - Merge the y_train and y_test together to have the both activity which performed by the subject.
   - Merge the subject_train and subject_test to have both the subject who performed the activity in training and testing.
